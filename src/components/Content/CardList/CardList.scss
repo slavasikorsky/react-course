@@ -1,0 +1,15 @@
+.grid {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  padding: 0 0 200px;
+}
+
+.grid__masonry{
+    display: flex;
+    gap: 76px;
+    justify-content: space-between;
+  }
+  .grid__masonry__column{
+    background-clip: padding-box;
+  }

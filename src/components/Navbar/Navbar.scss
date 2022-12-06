@@ -1,0 +1,28 @@
+@import '../../css/colors';
+
+.navbar {
+    display: flex;
+    list-style: none;
+    .navbar__item {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 23px;
+        margin: 0 21px;
+        &:hover {
+            .navbar__item-link {
+                opacity: 1;
+            }
+        }
+    }
+
+    .navbar__item--active {
+        .navbar__item-link {
+            opacity: 1;
+        }
+    }
+
+    .navbar__item-link {
+        color: $text;
+        opacity: 0.5;
+    }
+}

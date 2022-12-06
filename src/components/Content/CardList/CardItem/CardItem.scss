@@ -1,0 +1,87 @@
+@import '../../../../css/_colors.scss';
+
+.grid__item {
+    display: flex;
+    flex-flow: row-reverse;
+    justify-content: flex-start;
+    background: $card-bg;
+    border-radius: 20px;
+    margin-bottom: 65px;
+    overflow: hidden;
+
+    .grid__item-content {
+        padding: 70px 60px;
+    }
+
+    .grid__item-title {
+        font-weight: 700;
+        font-size: 21px;
+        line-height: 32px;
+        margin: 0 0 20px;
+    }
+
+    .grid__item-text {
+        font-size: 16px;
+        line-height: 28px;
+        opacity: 0.7;
+        margin: 0 0 30px;
+    }
+
+    .grid__item-image {
+        width: 100%;
+    }
+
+    .item-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .grid__item-views {
+        font-family: 'Netflix Sans';
+        font-size: 12px;
+        line-height: 15px;
+        padding-left: 20px;
+        position: relative;
+        margin-left: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 16px;
+            height: 17px;
+            transform: translateY(-50%);
+            background: url("./../../../../images/icons/views.svg") no-repeat;
+        }
+    }
+
+    .grid__item-comments {
+        font-family: 'Netflix Sans';
+        font-size: 12px;
+        line-height: 15px;
+        padding-left: 20px;
+        position: relative;
+        margin-left: 10px;
+        &:before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: 16px;
+            height: 17px;
+            transform: translateY(-50%);
+            background: url("./../../../../images/icons/comments.svg") no-repeat;
+        }
+    }
+
+    &.grid__item--masonry{
+        flex-flow: column;
+        .grid__item-content {
+            padding: 10px 30px
+        }
+        .grid__item-title {
+            margin: 0 0 10px;
+        }
+    }
+}
