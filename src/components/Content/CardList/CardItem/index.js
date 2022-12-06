@@ -9,7 +9,7 @@ const CardItem = (props) => {
     const imgSrc = props.imgSrc || placeholder;
     const clName = props.clName || 'grid__item';
     //for masonry grid text limited by 100 symbols, for top news = 300
-    const limiter = (clName.includes('masonry') ? 100 : 300 );
+    const limiter = (clName.includes('masonry') ? 120 : 400 );
     const text = props.text.substring(0, limiter) + '...';
     const views = props.views;
     const comments = props.comments;
