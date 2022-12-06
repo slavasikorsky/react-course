@@ -9,7 +9,7 @@ const CardList = (props) => {
     const cardsCount = 10;
     const loadMoreCount = 3;
     const [next, setNext] = useState(cardsCount);
-    const handleMoreImage = () => {
+    const handleMoreCards = () => {
         setNext(next + loadMoreCount);
     };
 
@@ -56,7 +56,7 @@ const CardList = (props) => {
             {next < cards?.length && (
                 <Button 
                     className="button--large" 
-                    onClick={handleMoreImage}>
+                    onClick={handleMoreCards}>
                         Load more
                 </Button>
             )}
