@@ -78,6 +78,54 @@ const dataContent  = [
         text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
         comments: "47",
         views: "2459"
+    },
+    {
+        id: 10,
+        imgSrc: require("../images/image1.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "100"
+    },
+    {
+        id: 11,
+        imgSrc: require("../images/image1.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "100"
+    },
+    {
+        id: 12,
+        imgSrc: require("../images/image1.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "100"
+    },
+    {
+        id: 13,
+        imgSrc: require("../images/image4.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "100"
+    },
+    {
+        id: 14,
+        imgSrc: require("../images/image3.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "200"
+    },
+    {
+        id: 15,
+        imgSrc: require("../images/image2.jpg"),
+        title: "Lorem ipsum dolor sit amet, consectetur another",
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent tristique magna sit amet purus gravida quis blandit. Bibendum arcu vitae elementum curabitur. Amet nulla facilisi morbi tempus iaculis urna id. Tristique nulla aliquet enim tortor at auctor urna. At imperdiet dui accumsan sit amet nulla. Tincidunt augue interdum velit euismod. Tristique senectus et netus et malesuada fames ac turpis. Nibh nisl condimentum id venenatis...",
+        comments: "47",
+        views: "100"
     }
 ];
 
