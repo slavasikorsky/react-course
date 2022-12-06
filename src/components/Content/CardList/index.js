@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CardItem from '../CardList/CardItem';
 import './CardList.scss';
 import Masonry from 'react-masonry-css'
@@ -6,14 +6,19 @@ import Button from '../../Button';
 
 const CardList = (props) => {
     const cards = props.data;
+    const cardsCount = 10;
+    const loadMoreCount = 3;
+    const [next, setNext] = useState(cardsCount);
+    const handleMoreImage = () => {
+        setNext(next + loadMoreCount);
+    };
 
     const breakpointColumnsObj = {
         default: 3,
         1100: 3,
         992: 2,
         768: 1
-      };
-
+    };
       
     return (
         <div className="grid">
@@ -32,8 +37,8 @@ const CardList = (props) => {
                 className="grid__masonry"
                 columnClassName="grid__masonry__column" 
             >
-                {/* Show other cards in the masonry layout */}
-                {cards.map(item => (
+                {/* Show other cards in the masonry layout starting by 1*/}
+                {cards?.slice(1, next)?.map(item => (
                     item.id>0 
                         ? <CardItem 
                             clName = "grid__item grid__item--masonry"
@@ -48,7 +53,13 @@ const CardList = (props) => {
                         : false
                 ))}
             </Masonry>
-            <Button className="button--large">Load more</Button>
+            {next < cards?.length && (
+                <Button 
+                    className="button--large" 
+                    onClick={handleMoreImage}>
+                        Load more
+                </Button>
+            )}
         </div>
     );
 };
