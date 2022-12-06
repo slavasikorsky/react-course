@@ -1,5 +1,10 @@
+@import '../../../css/media';
+
 .filter-wrapper {
     display: flex;
     flex-flow: row-wrap;
-    padding: 50px 0;
+    padding: 20px 0;
+    @media screen and (min-width: $xl) {
+        padding: 50px 0;
+    }
 }

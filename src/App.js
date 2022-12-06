@@ -2,7 +2,7 @@ import Content from './components/Content';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import './css/App.scss';
+import './css/_app.scss';
 
 function App() {
   return (

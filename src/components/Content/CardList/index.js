@@ -11,7 +11,7 @@ const CardList = (props) => {
         default: 3,
         1100: 3,
         992: 2,
-        480: 1
+        768: 1
       };
 
       

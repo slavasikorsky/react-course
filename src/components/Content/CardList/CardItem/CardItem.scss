@@ -1,16 +1,24 @@
 @import '../../../../css/_colors.scss';
+@import '../../../../css/_media.scss';
 
 .grid__item {
     display: flex;
-    flex-flow: row-reverse;
+    flex-flow: column;
     justify-content: flex-start;
     background: $card-bg;
     border-radius: 20px;
     margin-bottom: 65px;
     overflow: hidden;
 
+    @media screen and (min-width: $lg) {
+        flex-flow: row-reverse;
+    }
+
     .grid__item-content {
-        padding: 70px 60px;
+        padding: 30px;
+        @media screen and (min-width: $xl) {
+            padding: 70px 60px;
+        }
     }
 
     .grid__item-title {
@@ -32,9 +40,22 @@
     }
 
     .item-bottom {
-        display: flex;
+        display: inline-flex;
         align-items: center;
         justify-content: space-between;
+        flex-flow: column;
+        width: 100%;
+
+        @media screen and (min-width: $lg) {
+            flex-flow: nowrap;
+        }
+    }
+
+    .grid__item-stats {
+        margin: 10px 0;
+        @media screen and (min-width: $lg) {
+            margin: 0;
+        }
     }
 
     .grid__item-views {
@@ -43,7 +64,7 @@
         line-height: 15px;
         padding-left: 20px;
         position: relative;
-        margin-left: 10px;
+        margin: 10px;
         &:before {
             content: "";
             position: absolute;
@@ -54,6 +75,9 @@
             transform: translateY(-50%);
             background: url("./../../../../images/icons/views.svg") no-repeat;
         }
+        @media screen and (min-width: $lg) {
+            margin: 0 10px 0 0;
+        }
     }
 
     .grid__item-comments {
@@ -62,7 +86,7 @@
         line-height: 15px;
         padding-left: 20px;
         position: relative;
-        margin-left: 10px;
+        margin: 10px;
         &:before {
             content: "";
             position: absolute;
@@ -72,6 +96,9 @@
             height: 17px;
             transform: translateY(-50%);
             background: url("./../../../../images/icons/comments.svg") no-repeat;
+        }
+        @media screen and (min-width: $lg) {
+            margin: 0 10px 0 0;
         }
     }
 

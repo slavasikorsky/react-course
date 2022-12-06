@@ -1,7 +1,7 @@
 import './Header.scss';
 import React from 'react';
 import Container from '../Container';
-import Navbar from '../Navbar'
+import Navbar from './Navbar'
 import Wrapper from '../Wrapper';
 
 const Header = () => {

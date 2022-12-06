@@ -1,11 +1,20 @@
 @import '../../css/colors';
+@import '../../css/media';
 
 .footer {
-    padding: 120px 0 112px;
+    padding: 40px 0;
     background: $gradient-bg;
+    @media screen and (min-width: $xl) {
+        padding: 120px 0 112px;
+    }
     .footer-text {
         max-width: 390px;
-        margin-right: 140px;
+        margin-right: 20px;
+        width: 100%;
+        @media screen and (min-width: $lg) {
+            width: 50%;
+            margin-right: 140px;
+        }
     }
 
     .footer-text__logo {
@@ -31,35 +40,5 @@
         font-weight: 300;
         font-size: 16px;
         line-height: 28px;
-    }
-
-    .footer-menu {
-        width: 100%;
-        display: flex;
-        flex-flow: row-wrap;
-
-        .footer-menu__item {
-            width: 33.3%;
-            display: flex;
-            flex-flow: column;
-
-            .footer-menu__item-title {
-                font-weight: 700;
-                font-size: 20px;
-                line-height: 60px;
-            }
-        }
-
-        .footer-menu__item-content {
-            list-style: none;
-            padding-left:0;
-        }
-
-        .list-item__link {
-            font-weight: 300;
-            font-size: 18px;
-            line-height: 38px;
-            color: $white;
-        }
     }
 }
