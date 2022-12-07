@@ -1,11 +1,13 @@
 import React from 'react';
-import HeroImage from '../../images/hero.png';
-import './Hero.scss'
 
-const Hero = () => {
+import './Hero.scss';
+import placeholder from '../../assets/images/placeholder.png'
+
+const Hero = (props) => {
+    const image = props.image || placeholder;
     return (
         <div className="hero">
-            <img src={HeroImage} alt="Hero banner" className="hero__image" />
+            <img src={image} alt="Hero banner" className="hero__image" />
         </div>
     );
 };

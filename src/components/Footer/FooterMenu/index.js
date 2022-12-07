@@ -1,61 +1,100 @@
 import React from 'react';
+import NavList from '../../NavList';
+
 import './FooterMenu.scss'
 
 const FooterMenu = () => {
+ 
+    const topCategory = [
+        {
+            link: '/#',
+            active: false,
+            title: 'Item',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item2',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item3',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item4',
+        }
+    ];
+
+    const tags = [
+        {
+            link: '/#',
+            active: false,
+            title: 'ItemTag',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item2',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item3',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item4',
+        }
+    ];
+
+    const topRated = [
+        {
+            link: '/#',
+            active: false,
+            title: 'ItemRated',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item2',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item3',
+        },
+        {
+            link: '/#',
+            active: false,
+            title: 'Item4',
+        }
+    ];
+
     return (
         <div className="footer-menu">
-        <div className="footer-menu__item">
-            <span className="footer-menu__item-title">Top Category</span>
-            <ul className="footer-menu__item-content">
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-            </ul>
+            <div className="footer-menu__item">
+                <span className="footer-menu__item-title">Top Category</span>
+                {topCategory && 
+                    (<NavList data={topCategory} direction="vertical"/>)
+                }
+            </div>
+            <div className="footer-menu__item">
+                <span className="footer-menu__item-title">Tags</span>
+                {tags && 
+                    (<NavList data={tags} direction="vertical"/>)
+                }
+            </div>
+            <div className="footer-menu__item">
+                <span className="footer-menu__item-title">Top Rated</span>
+                {topRated && 
+                    (<NavList data={topRated} direction="vertical"/>)
+                }
+            </div>
         </div>
-        <div className="footer-menu__item">
-            <span className="footer-menu__item-title">Top tags</span>
-            <ul className="footer-menu__item-content">
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-            </ul>
-        </div>
-        <div className="footer-menu__item">
-            <span className="footer-menu__item-title">Menu</span>
-            <ul className="footer-menu__item-content">
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-                <li className="list-item">
-                    <a href="/#" className="list-item__link">Item</a>
-                </li>
-            </ul>
-        </div>
-    </div>
     );
 };
 
