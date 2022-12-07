@@ -1,5 +1,5 @@
-@import '../../../../css/_colors.scss';
-@import '../../../../css/_media.scss';
+@import '../../../../assets/css/_colors.scss';
+@import '../../../../assets/css/_media.scss';
 
 .grid__item {
     display: flex;
@@ -73,7 +73,7 @@
             width: 16px;
             height: 17px;
             transform: translateY(-50%);
-            background: url("./../../../../images/icons/views.svg") no-repeat;
+            background: url("./../../../../assets/images/icons/views.svg") no-repeat;
         }
         @media screen and (min-width: $lg) {
             margin: 0 10px 0 0;
@@ -95,7 +95,7 @@
             width: 16px;
             height: 17px;
             transform: translateY(-50%);
-            background: url("./../../../../images/icons/comments.svg") no-repeat;
+            background: url("./../../../../assets/images/icons/comments.svg") no-repeat;
         }
         @media screen and (min-width: $lg) {
             margin: 0 10px 0 0;

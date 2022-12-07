@@ -1,4 +1,4 @@
-@import '../../css/colors';
+@import './../../assets/css/colors';
 
 .button {
     display: inline-flex;
@@ -36,7 +36,7 @@
             top: 50%;
             right: 24px;
             transform: translateY(-50%);
-            background: url("../../images/icons/arrow.svg") no-repeat;
+            background: url("../../assets/images/icons/arrow.svg") no-repeat;
             width: 12px;
             height: 9px;
         }
