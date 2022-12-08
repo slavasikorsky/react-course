@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import CardItem from '../CardList/CardItem';
 import './CardList.scss';
 import Masonry from 'react-masonry-css'
-import Button from '../../Button';
+import Button from '../Button';
 
 const CardList = (props) => {
     const cards = props.data;

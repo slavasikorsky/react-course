@@ -1,13 +1,14 @@
 import React from 'react';
 import './NavItem.scss'
+import { NavLink } from 'react-router-dom';
 
-const NavItem = ({children, link, active}) => {
-    const clName = active ? 'navbar__item navbar__item--active' : 'navbar__item';
+const NavItem = ({children, link}) => {
+
     return (
-        <li className={clName}>
-            <a href={link} className="navbar__item-link">
+        <li className="navbar__item">
+            <NavLink to={link} className={({isActive}) => isActive ? 'navbar__item-link navbar__item-link--active' : 'navbar__item-link'}>
                 {children}
-            </a>
+            </NavLink>
         </li>
     );
 };
