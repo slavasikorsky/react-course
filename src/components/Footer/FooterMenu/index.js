@@ -7,69 +7,57 @@ const FooterMenu = () => {
  
     const topCategory = [
         {
-            link: '/#',
-            active: false,
-            title: 'Item',
+            link: '/',
+            title: 'Home',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/2',
             title: 'Item2',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/3',
             title: 'Item3',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/4',
             title: 'Item4',
         }
     ];
 
     const tags = [
         {
-            link: '/#',
-            active: false,
-            title: 'ItemTag',
+            link: '/404',
+            title: '404',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/123',
             title: 'Item2',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/321',
             title: 'Item3',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/11',
             title: 'Item4',
         }
     ];
 
     const topRated = [
         {
-            link: '/#',
-            active: false,
-            title: 'ItemRated',
+            link: '/about',
+            title: 'About',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/132',
             title: 'Item2',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/32',
             title: 'Item3',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/22',
             title: 'Item4',
         }
     ];

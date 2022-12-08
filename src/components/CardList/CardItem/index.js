@@ -1,7 +1,7 @@
 import React from 'react';
 import './CardItem.scss';
-import placeholder from '../../../../assets/images/placeholder.png';
-import Button from '../../../Button';
+import placeholder from '../../../assets/images/placeholder.png';
+import Button from '../../Button';
 
 const CardItem = (props) => {
     const link = props.id;

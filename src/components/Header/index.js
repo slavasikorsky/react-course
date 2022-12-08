@@ -2,6 +2,7 @@ import React from 'react';
 import Container from '../Container';
 import Wrapper from '../Wrapper';
 import NavList from '../NavList';
+import { NavLink } from 'react-router-dom';
 
 import './Header.scss';
 
@@ -9,22 +10,18 @@ const Header = () => {
     const navLinks = [
         {
             link: '/',
-            active: true,
             title: 'Home',
         },
         {
-            link: '/#',
-            active: false,
-            title: 'Item',
+            link: '/about',
+            title: 'About',
         },
         {
-            link: '/#',
-            active: false,
-            title: 'Item2',
+            link: '/other',
+            title: 'Other',
         },
         {
-            link: '/#',
-            active: false,
+            link: '/1',
             title: 'Item3',
         }
     ];
@@ -33,7 +30,7 @@ const Header = () => {
         <header className="header">
             <Container>
                 <Wrapper>
-                    <a href="/" className="logo">My app</a>
+                    <NavLink to="/" className="logo">My app</NavLink>
                     {navLinks && (<NavList data={navLinks} direction="horizontal"/>)}
                 </Wrapper>
             </Container>

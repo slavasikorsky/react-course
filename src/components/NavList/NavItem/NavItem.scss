@@ -19,13 +19,11 @@
 	}
 }
 
-.navbar__item--active {
-	.navbar__item-link {
-		opacity: 1;
-	}
-}
-
 .navbar__item-link {
 	color: $text;
 	opacity: 0.5;
+}
+
+.navbar__item-link--active {
+	opacity: 1;
 }
