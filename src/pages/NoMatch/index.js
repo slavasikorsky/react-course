@@ -1,17 +1,12 @@
 import React from 'react';
-import Container from '../../components/Container';
-import Wrapper from '../../components/Wrapper';
+import Hero from '../../components/Hero';
+
+import imageHero from '../../assets/images/404.jpg';
 
 const NoMutch = () => {
     return (
         <div>
-            <Container>
-                <Wrapper>
-                    <div style={{margin:'40px 0', minHeight:'300px'}}>
-                        <h1>Not Found</h1>
-                    </div>
-                </Wrapper>
-            </Container>
+            <Hero image={imageHero} title='404 not found' />
         </div>
     );
 };

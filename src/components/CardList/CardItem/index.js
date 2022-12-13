@@ -1,18 +1,18 @@
 import React from 'react';
-import './CardItem.scss';
-import placeholder from '../../../assets/images/placeholder.png';
 import Button from '../../Button';
 
+import './CardItem.scss';
+import placeholder from '../../../assets/images/placeholder.png';
+
+
 const CardItem = (props) => {
-    const link = props.id;
+    const link = '/products/' + props.id;
     const title = props.title  || 'Title not found';
     const imgSrc = props.imgSrc || placeholder;
     const clName = props.clName || 'grid__item';
-    //for masonry grid text limited by 100 symbols, for top news = 300
-    const limiter = (clName.includes('masonry') ? 120 : 400 );
-    const text = props.text.substring(0, limiter) + '...';
-    const views = props.views;
-    const comments = props.comments;
+    const text= props.text;
+    const price = props.price;
+    const rating = props.rating;
     
     return (
         <div className={clName}>
@@ -25,8 +25,8 @@ const CardItem = (props) => {
                 <div className="item-bottom">
                     <Button className="button--with-arrow" href={link}>Read more</Button>
                     <div className="grid__item-stats">
-                        <span className="grid__item-views">{views}</span>
-                        <span className="grid__item-comments">{comments}</span>
+                        <span className="grid__item-price">{price}$</span>
+                        <span className="grid__item-rating">{rating}</span>
                     </div>
                 </div>
             </div>

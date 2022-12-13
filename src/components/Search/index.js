@@ -1,10 +1,15 @@
 import React from 'react';
 import './Search.scss';
 
-const Search = () => {
+const Search = (props) => {
     return (
         <div className="search-wrapper">
-            <input type="text" className="search-input" placeholder="Search Article"/>
+            <input 
+                onKeyUp={props.postsHandler}
+                type="text" 
+                className="search-input" 
+                placeholder="Search Article"
+            />
         </div>
     );
 };
