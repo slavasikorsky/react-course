@@ -37,23 +37,20 @@ const customStyles = {
   }
   
 
-const Filter = () => {
+const Filter = (props) => {
     const categoryOptions = [
-        { value: '1', label: 'Categories' },
-        { value: '2', label: 'Categories' },
-        { value: '3', label: 'Categories' }
+        { value: 'smartphones', label: 'smartphones' },
+        { value: 'automotive', label: 'automotive' },
+        { value: 'furniture', label: 'furniture' }
       ];
-
-    const tagOptions = [
-        { value: '1', label: 'Tags' },
-        { value: '2', label: 'Tags' },
-        { value: '3', label: 'Tags' }
-    ];
 
     return (
         <div className="filter-wrapper">
-            <Select styles={customStyles} options={categoryOptions} defaultInputValue={'Categories'} />
-            <Select styles={customStyles} options={tagOptions} defaultInputValue={'Tags'} />
+            <Select 
+                styles={customStyles} 
+                onChange={props.categoryHandler} 
+                options={categoryOptions}
+            />
         </div>
     );
 };

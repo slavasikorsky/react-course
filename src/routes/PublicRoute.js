@@ -13,7 +13,7 @@ const PublicRoute = () => {
             <Route element={<Layout />}>
                 <Route index path='/' element={<Home />} />
                 <Route path='/about' element={<About />} />
-                <Route path='/post/:id' element={<Post />} />
+                <Route path='/products/:id' element={<Post />} />
                 <Route path='*' element={<NoMutch />} />
             </Route>
         </Routes>

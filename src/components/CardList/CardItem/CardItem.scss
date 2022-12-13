@@ -12,6 +12,7 @@
 
     @media screen and (min-width: $lg) {
         flex-flow: row-reverse;
+        justify-content: space-between;
     }
 
     .grid__item-content {
@@ -37,6 +38,9 @@
 
     .grid__item-image {
         width: 100%;
+        @media screen and (min-width: $lg) {
+            width: 50%;
+        }
     }
 
     .item-bottom {
@@ -58,7 +62,7 @@
         }
     }
 
-    .grid__item-views {
+    .grid__item-price {
         font-family: 'Netflix Sans';
         font-size: 12px;
         line-height: 15px;
@@ -70,17 +74,17 @@
             position: absolute;
             top: 50%;
             left: 0;
-            width: 16px;
+            width: 17px;
             height: 17px;
             transform: translateY(-50%);
-            background: url("./../../../assets/images/icons/views.svg") no-repeat;
+            background: url("./../../../assets/images/icons/price.svg") no-repeat;
         }
         @media screen and (min-width: $lg) {
             margin: 0 10px 0 0;
         }
     }
 
-    .grid__item-comments {
+    .grid__item-rating {
         font-family: 'Netflix Sans';
         font-size: 12px;
         line-height: 15px;
@@ -92,10 +96,10 @@
             position: absolute;
             top: 50%;
             left: 0;
-            width: 16px;
+            width: 17px;
             height: 17px;
             transform: translateY(-50%);
-            background: url("./../../../assets/images/icons/comments.svg") no-repeat;
+            background: url("./../../../assets/images/icons/rating.svg") no-repeat;
         }
         @media screen and (min-width: $lg) {
             margin: 0 10px 0 0;
@@ -109,6 +113,12 @@
         }
         .grid__item-title {
             margin: 0 0 10px;
+        }
+
+        .grid__item-image {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
         }
     }
 }
