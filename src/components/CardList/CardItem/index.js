@@ -23,7 +23,7 @@ const CardItem = (props) => {
                     (<p className="grid__item-text">{text}</p>)
                 }
                 <div className="item-bottom">
-                    <Button className="button--with-arrow" href={link}>Read more</Button>
+                    <Button className="button--with-arrow" to={link}>Read more</Button>
                     <div className="grid__item-stats">
                         <span className="grid__item-price">{price}$</span>
                         <span className="grid__item-rating">{rating}</span>
