@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Button.scss';
 
 const Button = ({children, className, ...rest}) => {
     return (
-        <a className={`button ${className}`} {...rest}>
+        <Link className={`button ${className}`} {...rest}>
             {children}
-        </a>
+        </Link>
     );
 };
 

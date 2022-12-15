@@ -1,14 +1,15 @@
 import { useEffect, useState } from 'react';
+import axios from 'axios';
+
 import Container from '../../components/Container';
 import CardList from '../../components/CardList';
 import Filter from '../../components/Filter';
 import Search from '../../components/Search';
 import Hero from '../../components/Hero';
 import Wrapper from '../../components/Wrapper';
-import axios from 'axios';
+import Button from '../../components/Button';
 
 import heroImage from './../../assets/images/hero.png';
-import Button from '../../components/Button';
 
 const Home = () => {
     const API_URL = 'https://dummyjson.com/products';
