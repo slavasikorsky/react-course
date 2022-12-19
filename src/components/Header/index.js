@@ -17,8 +17,8 @@ const Header = () => {
             title: 'About',
         },
         {
-            link: '/other',
-            title: 'Other',
+            link: '/contact',
+            title: 'Contact',
         },
         {
             link: '/1',
