@@ -21,8 +21,8 @@ const Header = () => {
             title: 'Contact',
         },
         {
-            link: '/1',
-            title: 'Item3',
+            link: '/dashboard',
+            title: 'Dashboard',
         }
     ];
 

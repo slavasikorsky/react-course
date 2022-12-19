@@ -7,7 +7,7 @@ import Header from '../components/Header';
 
 import './../assets/css/_app.scss';
 
-const Layout = () => {
+const PublicLayout = () => {
     return (
         <>
             <Header />
@@ -18,4 +18,4 @@ const Layout = () => {
     );
 };
 
-export default Layout;
+export default PublicLayout;
