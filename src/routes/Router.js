@@ -10,6 +10,8 @@ import Dashboard from '../pages/Dashboard';
 import Home from '../pages/Home';
 import NoMutch from '../pages/NoMatch';
 import Post from '../pages/Post';
+import Posts from '../pages/Posts';
+import Tasks from '../pages/Tasks';
 
 const PublicRoute = () => {
     return (
@@ -23,6 +25,8 @@ const PublicRoute = () => {
             </Route>
             <Route element={<PrivateLayout />}>
                 <Route path='/dashboard' element={<Dashboard />} />
+                <Route path='/tasks' element={<Tasks />} />
+                <Route path='/posts' element={<Posts />} />
                 <Route path='*' element={<NoMutch />} />
             </Route>
         </Routes>

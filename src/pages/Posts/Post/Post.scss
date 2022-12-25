@@ -1,0 +1,19 @@
+.post {
+    position: relative;
+    width: 100%;
+    .toggle-menu {
+        position: absolute;
+        right: 0;
+    }
+    .menu {
+        z-index: 1;
+        position: absolute;
+        right: 50px;
+        top: 0px;
+        background: #EBEBEB;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-flow: column;
+    }
+}

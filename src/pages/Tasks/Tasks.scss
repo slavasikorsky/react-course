@@ -1,0 +1,33 @@
+.tasks-list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    padding: 0;
+
+    li {
+        order: 0;
+        margin: 0 0 20px;
+        background: #fff;
+        border: 1px solid #FFFBE8;
+        border-radius: 8px;
+        height: 64px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 140%;
+        letter-spacing: -0.5px;
+        color: rgba(24, 24, 25, 0.9);
+        display: flex;
+        align-items: center;
+        
+
+        &.pinned {
+            order: -99;
+            background: #FFFBE8;
+        }
+        &.done {
+            opacity: .7;
+            background: #C1C1C1;
+        }
+    }
+}
