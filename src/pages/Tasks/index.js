@@ -81,8 +81,12 @@ const Tasks = () => {
                     />   
                 ))}
             </ul>
-            <Form onSubmit={handleSubmit}>
-                <Input type={"text"} name={"name"} placeholder="Enter task name" />
+            <Form onSubmit={handleSubmit} className="task-form">
+                <Input 
+                    type={"text"} 
+                    name={"name"} 
+                    placeholder="Enter task name" 
+                />
                 <button type={"submit"}>Add</button>
             </Form>
         </DashboardContent>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import './Post.scss';
 
@@ -6,7 +6,7 @@ const Post = (props) => {
     const [toggleMenu, setToggleMenu] = useState(false);
 
     const editHandler = (e, id) => {
-        e.preventDefault();
+        e.stopPropagation();
         setToggleMenu(false);
         props.onEdit(id);
     }
@@ -24,19 +24,22 @@ const Post = (props) => {
 
     return (
         <li className="post">
-            {props.id} || 
-            {props.title} |
-            {props.author} 
+            <span className="post-field">{props.title}</span> 
+            <span className={`post-field ${props.status}`}><span>{props.status}</span></span>
+            <span className="post-field data"><span>{props.date}</span></span>
+            <span className="post-field">{props.author}</span>
             <button 
                 className="toggle-menu"
                 onClick={(e)=>toggleHandler(e)}
             >
-                Toggle menu
+                ...
             </button>
             {toggleMenu && 
                 <div className="menu">
-                    <button onClick={(e)=>editHandler(e, props.id)}>Edit</button>
-                    <button onClick={(e)=>deleteHandler(e, props.id)}>Delete</button>
+                    <div className="menu-content">
+                        <button onClick={(e)=>editHandler(e, props.id)}>Edit</button>
+                        <button onClick={(e)=>deleteHandler(e, props.id)}>Delete</button>
+                    </div>
                 </div>
             }
         </li>

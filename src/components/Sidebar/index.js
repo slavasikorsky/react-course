@@ -2,6 +2,7 @@ import React from 'react';
 import SidebarLink from './SidebarLink';
 
 import './Sidebar.scss';
+import SidebarUserData from './SidebarUserData';
 
 const Sidebar = () => {
     const sidebarLinks = [
@@ -21,9 +22,7 @@ const Sidebar = () => {
 
     return (
         <div className="sidebar">
-            <div className="user-data">
-                user name
-            </div>
+            <SidebarUserData />
             <ul className="sidebar-links">
                 {sidebarLinks && sidebarLinks.map((item, index) => (
                     <SidebarLink key={index} link={item.link} active={item.active}>
