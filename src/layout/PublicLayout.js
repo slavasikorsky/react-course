@@ -1,18 +1,21 @@
 import React from 'react';
 import {Outlet} from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+ 
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 
 import './../assets/css/_app.scss';
 
-const Layout = () => {
+const PublicLayout = () => {
     return (
-        <div>
+        <>
             <Header />
             <Outlet />
             <Footer />
-        </div>
+            <ToastContainer />
+        </>
     );
 };
 
-export default Layout;
+export default PublicLayout;
